@@ -2,13 +2,12 @@
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
-
+key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 //Movement
 var move = key_right - key_left;
 hsp = move * walksp;
 
 vsp = vsp + grv;
-
 //Jumping
 if(place_meeting(x,y+1,o_wall) && (key_space)){
 	vsp = jumpspeed;
@@ -47,7 +46,11 @@ if(!place_meeting(x,y+1,o_wall)){
 } else{
 	image_speed = 1;
 	if(hsp == 0){
-		sprite_index = s_player_s;
+		if(key_down){
+			sprite_index = s_player_c;
+		} else {
+			sprite_index = s_player_s;
+		}		
 	} else {
 		sprite_index = s_player_r;	
 	}
