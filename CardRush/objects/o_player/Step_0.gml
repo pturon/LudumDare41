@@ -20,6 +20,13 @@ if(place_meeting(x,y+vsp,o_wall)){
 	}
 	vsp = 0;
 }
+if(place_meeting(x,y+vsp,o_spikes)){
+	if(!invincible){
+		health--;
+		alarm[1]=room_speed;
+		invincible = true;
+	}	
+}
 
 y = y + vsp;
 

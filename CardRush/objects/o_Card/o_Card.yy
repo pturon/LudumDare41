@@ -2,7 +2,7 @@
     "id": "a36ada4f-f11d-4f7a-825b-d7bc1ba565a2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_Card",
+    "name": "o_card",
     "eventList": [
         {
             "id": "bfd4fd8d-6027-4180-b41f-0a2f6ad136de",
@@ -42,6 +42,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
+            "m_owner": "a36ada4f-f11d-4f7a-825b-d7bc1ba565a2"
+        },
+        {
+            "id": "4d725786-3f8e-4ba7-b5b9-e14d3634c3b9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
             "m_owner": "a36ada4f-f11d-4f7a-825b-d7bc1ba565a2"
         }
     ],
