@@ -12,3 +12,5 @@ jumpspeed = -9;
 
 hasbuff = false;
 
+image_speed = 0;
+
