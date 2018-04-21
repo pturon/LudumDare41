@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "6cdc3e38-51d7-49c5-b98a-22e61d074136",
+            "Value": {
+                "id": "302d1078-4442-463d-a5d2-740f569e6fd2",
+                "resourcePath": "sprites\\s_mana_prog_border\\s_mana_prog_border.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6dc6e1e5-98be-4166-a10a-20bd25efb064",
             "Value": {
                 "id": "8d12679d-64f4-4ec6-b010-c6e70b9c95df",
@@ -159,19 +167,19 @@
             }
         },
         {
+            "Key": "71ba4f96-42de-48ac-a4d4-9d6082c2077f",
+            "Value": {
+                "id": "50af7eb9-f159-49ca-b887-51609133dd43",
+                "resourcePath": "objects\\o_controller\\o_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "785664bf-e336-45d0-92c4-f1466f399a2e",
             "Value": {
                 "id": "510cdbbb-2dee-4799-9bb7-3c25b2ad0380",
                 "resourcePath": "views\\785664bf-e336-45d0-92c4-f1466f399a2e.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "8b1671b0-fc44-42ed-a303-af482832627b",
-            "Value": {
-                "id": "891f0e8a-9a5b-4484-8c32-1f8196d5c02c",
-                "resourcePath": "objects\\o_mana_crystal\\o_mana_crystal.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -199,11 +207,11 @@
             }
         },
         {
-            "Key": "a03fb0b5-902e-4042-8aac-c833e610fc29",
+            "Key": "9b797763-53d2-4cfd-984d-d65cd9769cbe",
             "Value": {
-                "id": "838f4ed6-d651-4ec2-b453-edda0b97ad03",
-                "resourcePath": "objects\\o_heart\\o_heart.yy",
-                "resourceType": "GMObject"
+                "id": "7b385aa4-6b6f-4fc3-94f8-42fecf5a13c3",
+                "resourcePath": "sprites\\s_mana_crystal_empty\\s_mana_crystal_empty.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -218,7 +226,7 @@
             "Key": "a2c6569e-0a8e-4909-8c30-4e3f1d499b88",
             "Value": {
                 "id": "e1cae7e3-3bc0-49c3-b7fe-d995f8bd47b1",
-                "resourcePath": "sprites\\s_mana_crystal\\s_mana_crystal.yy",
+                "resourcePath": "sprites\\s_mana_crystal_full\\s_mana_crystal_full.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -275,6 +283,14 @@
             "Value": {
                 "id": "10a5b879-6631-4dfa-944a-e7b945c25ba6",
                 "resourcePath": "sprites\\s_block\\s_block.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c70e545b-4d39-4cc2-8bdb-9b106c66029e",
+            "Value": {
+                "id": "a1516234-0935-4a03-a832-60b0eb50faeb",
+                "resourcePath": "sprites\\s_mana_prog_background\\s_mana_prog_background.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -396,6 +412,14 @@
                 "id": "fa6761df-3c27-4004-8a13-f930c9a064c7",
                 "resourcePath": "views\\fb3a4f4a-3e27-477c-844d-d6b165dba5a4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fccaf4d5-f440-4255-96fc-9cad0a5fbae8",
+            "Value": {
+                "id": "cbd1ccc1-01c1-4d45-891a-3d2893480d16",
+                "resourcePath": "sprites\\s_mana_prog_inner\\s_mana_prog_inner.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
