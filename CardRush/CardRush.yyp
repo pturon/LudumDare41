@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "91066618-d4b6-4679-a38b-86dcb36a04e9",
+            "Value": {
+                "id": "81c274cf-8ce8-48f2-94d6-dd1b0069f44e",
+                "resourcePath": "objects\\o_enemy_easy\\o_enemy_easy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "97a28322-fe81-4be7-a834-83ba342ee3e8",
             "Value": {
                 "id": "6743da0d-c5d2-4ecc-b363-0fa6795ba3c9",
