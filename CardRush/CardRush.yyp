@@ -111,6 +111,22 @@
             }
         },
         {
+            "Key": "65d8fa79-2712-4e08-8a94-bf6407f1a843",
+            "Value": {
+                "id": "e0d0561f-cede-4c4f-8ab8-ca07e3b6f932",
+                "resourcePath": "objects\\oCardFreeze\\oCardFreeze.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6babdc57-e737-4ddd-8928-8f1e6b2a5f9b",
+            "Value": {
+                "id": "223c842f-4eb9-4504-a91c-1a1f66663f69",
+                "resourcePath": "sprites\\sCardFreeze\\sCardFreeze.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "785664bf-e336-45d0-92c4-f1466f399a2e",
             "Value": {
                 "id": "510cdbbb-2dee-4799-9bb7-3c25b2ad0380",
@@ -143,11 +159,27 @@
             }
         },
         {
+            "Key": "a36ada4f-f11d-4f7a-825b-d7bc1ba565a2",
+            "Value": {
+                "id": "503f5869-8d19-4efa-880f-2e6ea2a7abf7",
+                "resourcePath": "objects\\oCard\\oCard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a600767e-bd7e-4302-8a2b-6b2fb6d40a92",
             "Value": {
                 "id": "8c260b20-be2c-4d62-af1e-16e4fcf0763f",
                 "resourcePath": "views\\a600767e-bd7e-4302-8a2b-6b2fb6d40a92.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "f66def9a-5d10-44da-a5e6-0eccefe9f702",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
             }
         },
         {
@@ -196,6 +228,14 @@
                 "id": "5885269b-5e8a-4819-ac5f-8b75b22be969",
                 "resourcePath": "views\\eff6b868-7441-4d31-a42a-b88f01a34044.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "f6550e43-d2ce-467b-8b81-55672bbbc27b",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {
