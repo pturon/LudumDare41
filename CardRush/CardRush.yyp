@@ -135,14 +135,6 @@
             }
         },
         {
-            "Key": "65d8fa79-2712-4e08-8a94-bf6407f1a843",
-            "Value": {
-                "id": "e0d0561f-cede-4c4f-8ab8-ca07e3b6f932",
-                "resourcePath": "objects\\o_card_freeze\\o_card_freeze.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "6babdc57-e737-4ddd-8928-8f1e6b2a5f9b",
             "Value": {
                 "id": "223c842f-4eb9-4504-a91c-1a1f66663f69",
