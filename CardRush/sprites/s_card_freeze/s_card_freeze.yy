@@ -2,7 +2,7 @@
     "id": "6babdc57-e737-4ddd-8928-8f1e6b2a5f9b",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sCardFreeze",
+    "name": "s_card_freeze",
     "For3D": false,
     "HTile": false,
     "VTile": false,

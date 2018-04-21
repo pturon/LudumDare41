@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "37e75b74-5925-41f8-9c6c-896e16f6c63a",
+            "Value": {
+                "id": "476260f2-9541-4e79-ba7f-9d8c2a83bc07",
+                "resourcePath": "sprites\\s_heart_empty\\s_heart_empty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ff993df-aa72-4f90-87d0-ffcf21bb3a9b",
             "Value": {
                 "id": "ce84877e-b002-41bc-96bf-3b06ef2dde08",
@@ -114,7 +122,7 @@
             "Key": "65d8fa79-2712-4e08-8a94-bf6407f1a843",
             "Value": {
                 "id": "e0d0561f-cede-4c4f-8ab8-ca07e3b6f932",
-                "resourcePath": "objects\\oCardFreeze\\oCardFreeze.yy",
+                "resourcePath": "objects\\o_card_freeze\\o_card_freeze.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -122,7 +130,7 @@
             "Key": "6babdc57-e737-4ddd-8928-8f1e6b2a5f9b",
             "Value": {
                 "id": "223c842f-4eb9-4504-a91c-1a1f66663f69",
-                "resourcePath": "sprites\\sCardFreeze\\sCardFreeze.yy",
+                "resourcePath": "sprites\\s_card_freeze\\s_card_freeze.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -132,6 +140,14 @@
                 "id": "510cdbbb-2dee-4799-9bb7-3c25b2ad0380",
                 "resourcePath": "views\\785664bf-e336-45d0-92c4-f1466f399a2e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8b1671b0-fc44-42ed-a303-af482832627b",
+            "Value": {
+                "id": "891f0e8a-9a5b-4484-8c32-1f8196d5c02c",
+                "resourcePath": "objects\\o_mana_crystal\\o_mana_crystal.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -159,10 +175,26 @@
             }
         },
         {
+            "Key": "a03fb0b5-902e-4042-8aac-c833e610fc29",
+            "Value": {
+                "id": "838f4ed6-d651-4ec2-b453-edda0b97ad03",
+                "resourcePath": "objects\\o_heart\\o_heart.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a2c6569e-0a8e-4909-8c30-4e3f1d499b88",
+            "Value": {
+                "id": "e1cae7e3-3bc0-49c3-b7fe-d995f8bd47b1",
+                "resourcePath": "sprites\\s_mana_crystal\\s_mana_crystal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a36ada4f-f11d-4f7a-825b-d7bc1ba565a2",
             "Value": {
                 "id": "503f5869-8d19-4efa-880f-2e6ea2a7abf7",
-                "resourcePath": "objects\\oCard\\oCard.yy",
+                "resourcePath": "objects\\o_Card\\o_Card.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -180,6 +212,14 @@
                 "id": "f66def9a-5d10-44da-a5e6-0eccefe9f702",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "abbdcb57-6569-483c-a3df-4a83c7d98c70",
+            "Value": {
+                "id": "49deeaf6-080d-4d17-b7d2-3bab2f61ea9b",
+                "resourcePath": "sprites\\s_heart_full\\s_heart_full.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,14 +1,14 @@
 {
-    "id": "65d8fa79-2712-4e08-8a94-bf6407f1a843",
+    "id": "a03fb0b5-902e-4042-8aac-c833e610fc29",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCardFreeze",
+    "name": "o_heart",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "a36ada4f-f11d-4f7a-825b-d7bc1ba565a2",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6babdc57-e737-4ddd-8928-8f1e6b2a5f9b",
+    "spriteId": "abbdcb57-6569-483c-a3df-4a83c7d98c70",
     "visible": true
 }

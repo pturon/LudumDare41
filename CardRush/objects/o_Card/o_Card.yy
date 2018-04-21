@@ -2,7 +2,7 @@
     "id": "a36ada4f-f11d-4f7a-825b-d7bc1ba565a2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCard",
+    "name": "o_Card",
     "eventList": [
         {
             "id": "bfd4fd8d-6027-4180-b41f-0a2f6ad136de",
