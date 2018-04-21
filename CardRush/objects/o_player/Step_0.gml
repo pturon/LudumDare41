@@ -53,4 +53,8 @@ if(!place_meeting(x,y+1,o_wall)){
 	}
 }
 
+if(health == 0){
+ game_end();	
+}
+
 
