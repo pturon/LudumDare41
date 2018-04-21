@@ -3,7 +3,7 @@
 instance_destroy(other);
 if(!hasbuff){
 	walksp = walksp_buffed;
-	alarm[0]=room_speed * 2;
+	alarm[0]=room_speed * 4;
 	hasbuff = true;
 }
 
