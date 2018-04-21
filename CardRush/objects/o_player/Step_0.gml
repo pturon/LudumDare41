@@ -11,7 +11,7 @@ vsp = vsp + grv;
 
 //Jumping
 if(place_meeting(x,y+1,o_wall) && (key_space)){
-	vsp = -9;
+	vsp = jumpspeed;
 }
 
 //Vertical Collision
