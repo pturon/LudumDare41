@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "ab4e8c81-779c-435d-b7f4-b4cbce7e8527",
+            "Value": {
+                "id": "189642da-edab-462c-8906-263c8f0c11c0",
+                "resourcePath": "objects\\o_deck\\o_deck.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "abbdcb57-6569-483c-a3df-4a83c7d98c70",
             "Value": {
                 "id": "49deeaf6-080d-4d17-b7d2-3bab2f61ea9b",
