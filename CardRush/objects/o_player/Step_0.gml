@@ -50,3 +50,6 @@ if(vsp < 0){
 } else {
 	sprite_index = s_player_r;
 }
+if(hsp < 0){
+	image_xscale = -1;
+} else image_xscale = 1;
