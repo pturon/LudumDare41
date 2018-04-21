@@ -34,19 +34,23 @@ if(place_meeting(x+hsp,y,o_wall)){
 
 x = x + hsp;
 
+
 //Animation
-if(hsp!=0){
-	image_speed = 1;
+if(hsp < 0){
+	image_xscale = -1;
 } else {
+	image_xscale = 1;
+}
+if(!place_meeting(x,y+1,o_wall)){
+	sprite_index = s_player_a;
 	image_speed = 0;
-	image_index = 0;
+} else{
+	image_speed = 1;
+	if(hsp == 0){
+		sprite_index = s_player_s;
+	} else {
+		sprite_index = s_player_r;	
+	}
 }
-if(vsp < 0){
-	sprite_index = s_player_a;
-	image_index = 0;	
-} else if(vsp > 0){
-	sprite_index = s_player_a;
-	image_index = 1;
-} else {
-	sprite_index = s_player_r;
-}
+
+
