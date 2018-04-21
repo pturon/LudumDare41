@@ -34,7 +34,6 @@ if(place_meeting(x+hsp,y,o_wall)){
 
 x = x + hsp;
 
-
 //Animation
 if(hsp < 0){
 	image_xscale = -1;
