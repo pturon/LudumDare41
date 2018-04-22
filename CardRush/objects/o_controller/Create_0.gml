@@ -1,4 +1,3 @@
-global.hp = 3;
 global.max_hp = 3;
 global.mana = 2;
 global.max_mana = 10;

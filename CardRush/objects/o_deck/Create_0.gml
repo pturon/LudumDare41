@@ -1,8 +1,11 @@
 /// @description Hier Beschreibung einfügen
-pile = ds_list_create();
-pile_used = ds_list_create();
-ds_list_add(pile,"speed_up");
-ds_list_add(pile,"speed_up");
-ds_list_add(pile,"speed_up");
-ds_list_add(pile,"speed_up");
-ds_list_add(pile,"speed_up");
+global.pile = ds_list_create();
+global.pile_used = ds_list_create();
+ds_list_add(global.pile,"freeze");
+ds_list_add(global.pile,"freeze");
+ds_list_add(global.pile,"jumping_power");
+ds_list_add(global.pile,"jumping_power");
+ds_list_add(global.pile,"speed_up");
+ds_list_add(global.pile,"speed_up");
+ds_list_add(global.pile,"manaflow");
+ds_list_add(global.pile,"manaflow");

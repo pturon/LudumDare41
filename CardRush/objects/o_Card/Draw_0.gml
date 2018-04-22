@@ -3,10 +3,19 @@ y = camera_get_view_y(view_camera) +posY;
 
 switch(card_type){
 	case "speed_up":
+		sprite = s_card_speed_up;
+		break;
+	case "freeze":
 		sprite = s_card_freeze;
 		break;
+	case "jumping_power":
+		sprite = s_card_jumping_power;
+		break;
+	case "manaflow":
+		sprite = s_card_manaflow;
+		break;
 	default:
-		sprite = s_card_freeze;
+		sprite = s_card_back;
 		break;
 }
 

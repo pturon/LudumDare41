@@ -10,9 +10,12 @@ walksp_normal = 6;
 walksp_slowed = 4;
 walksp = walksp_normal;
 
-jumpspeed = -9;
+jumpspeed_normal = -9;
+jumpspeed_buffed = -10;
+jumpspeed = jumpspeed_normal;
 
-hasbuff = false;
+has_speed_buff = false;
+has_jumping_buff = false;
 invincible = false;
 
 image_speed = 0;
