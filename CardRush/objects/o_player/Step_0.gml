@@ -1,4 +1,4 @@
-//Input
+ //Input
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
@@ -36,10 +36,6 @@ if(place_meeting(x,y+vsp,o_spikes)){
 		alarm[1]=room_speed;
 		invincible = true;
 		alarm[2] = 1;
-		
-		knockback = true;
-		knockbacksp = 3;
-		jump = true;
 	}	
 }
 
