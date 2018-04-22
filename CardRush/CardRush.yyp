@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "44ade798-5e35-49fc-89a6-aa53eb19cbfd",
+            "Value": {
+                "id": "d51f7033-bdba-47f3-8463-e12565832591",
+                "resourcePath": "sprites\\s_speed_buff\\s_speed_buff.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d6584e1-7828-4950-99d2-d0e7619f2ea6",
             "Value": {
                 "id": "c6679933-5143-4054-a81b-d319e68f69c7",
@@ -444,6 +452,14 @@
                 "id": "17f797e6-675e-4f76-be02-e1189e73e22b",
                 "resourcePath": "objects\\o_bullet_l\\o_bullet_l.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "eb7524b9-178a-4a1b-a188-cee7bc3764e9",
+            "Value": {
+                "id": "d993d5b0-9501-4d03-98e1-0fbc528d3d1c",
+                "resourcePath": "sprites\\s_jump_buff\\s_jump_buff.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

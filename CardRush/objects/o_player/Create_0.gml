@@ -15,7 +15,7 @@ jumpspeed_buffed = -10;
 jumpspeed = jumpspeed_normal;
 
 has_speed_buff = false;
-has_jumping_buff = false;
+has_jump_buff = false;
 invincible = false;
 
 image_speed = 0;

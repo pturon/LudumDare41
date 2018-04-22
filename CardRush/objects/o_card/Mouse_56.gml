@@ -5,11 +5,9 @@ if (picked && mouse_y < 627) {
 		case "speed_up":
 			if(global.mana >= 2){
 				global.mana = global.mana - 2;
-				if(!o_player.has_speed_buff){
-					o_player.walksp = o_player.walksp_buffed;
-					o_player.alarm[0]=room_speed * 3;
-					o_player.has_speed_buff = true;
-				}
+				o_player.walksp = o_player.walksp_buffed;
+				o_player.alarm[0]=room_speed * 3;
+				o_player.has_speed_buff = true;
 				played = true;
 			}		
 			break;
@@ -29,11 +27,9 @@ if (picked && mouse_y < 627) {
 		case "jumping_power":
 			if(global.mana >= 2){
 				global.mana = global.mana - 2;
-				if(!o_player.has_jumping_buff){
-					o_player.jumpspeed = o_player.jumpspeed_buffed;
-					o_player.alarm[2]=room_speed * 3;
-					o_player.has_jumping_buff = true;
-				}
+				o_player.jumpspeed = o_player.jumpspeed_buffed;
+				o_player.alarm[2]=room_speed * 3;
+				o_player.has_jump_buff = true;
 				played = true;
 			}		
 			break;
