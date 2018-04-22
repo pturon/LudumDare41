@@ -6,4 +6,8 @@ if(!invincible){
 	alarm[1] = room_speed;
 	invincible = true;
 	alarm[2] = 1;
+	
+	knockback = true;
+	knockbacksp = 3;
+	jump = true;
 }
