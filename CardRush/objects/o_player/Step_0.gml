@@ -1,4 +1,4 @@
-  //Input
+          //Input
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
@@ -76,7 +76,8 @@ if(!place_meeting(x,y+1,o_wall)){
 }
 
 if(health == 0){
- game_end();	
+ room_goto(r_death_menu);
+ instance_destroy(o_deck);
 }
 
 

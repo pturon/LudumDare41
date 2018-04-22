@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0bc701ae-1a0f-457d-a889-a9f79b8d9289",
+            "Value": {
+                "id": "41e315ef-d364-4650-9896-a9283bb003ca",
+                "resourcePath": "objects\\o_death\\o_death.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0de39ff1-5b89-472f-b540-38393ac5bd0f",
             "Value": {
                 "id": "3f59fbb8-e007-4469-ac9d-3f2362b3498a",
