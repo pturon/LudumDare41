@@ -20,3 +20,8 @@ invincible = false;
 
 image_speed = 0;
 
+knockback = false;
+jump = false;
+
+
+

@@ -1,13 +1,22 @@
-//Input
+          //Input
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
-//Movement
-var move = key_right - key_left;
-hsp = move * walksp;
 
-vsp = vsp + grv;
+//Movement
+if(!knockback){
+	var move = key_right - key_left;
+	hsp = move * walksp;
+	vsp = vsp + grv;
+} else if(jump){
+	vsp = jumpspeed;
+	jump = false;
+} else {	
+	hsp = knockbacksp;                
+	vsp = vsp + grv;		
+}
+
 //Jumping
 if(place_meeting(x,y+1,o_wall) && (key_space)){
 	vsp = jumpspeed;
@@ -19,6 +28,15 @@ if(place_meeting(x,y+vsp,o_wall)){
 		y = y + sign(vsp);
 	}
 	vsp = 0;
+	knockback = false;
+}
+if(place_meeting(x,y+vsp,o_spikes)){
+	if(!invincible){
+		health--;
+		alarm[1]=room_speed;
+		invincible = true;
+		alarm[2] = 1;
+	}	
 }
 
 y = y + vsp;
@@ -29,6 +47,7 @@ if(place_meeting(x+hsp,y,o_wall)){
 		x = x + sign(hsp);
 	}
 	hsp = 0;
+	knockback = false;
 }
 
 x = x + hsp;
@@ -57,7 +76,8 @@ if(!place_meeting(x,y+1,o_wall)){
 }
 
 if(health == 0){
- game_end();	
+ room_goto(r_death_menu);
+ instance_destroy(o_deck);
 }
 
 

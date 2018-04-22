@@ -28,7 +28,7 @@ if (picked && mouse_y < 627) {
 			if(global.mana >= 2){
 				global.mana = global.mana - 2;
 				o_player.jumpspeed = o_player.jumpspeed_buffed;
-				o_player.alarm[2]=room_speed * 3;
+				o_player.alarm[3]=room_speed * 3;
 				o_player.has_jump_buff = true;
 				played = true;
 			}		
