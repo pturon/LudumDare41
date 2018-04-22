@@ -12,7 +12,7 @@ if(!knockback){
 } else if(jump){
 	vsp = jumpspeed;
 	jump = false;
-} else {	
+} else {
 	hsp = knockbacksp;                
 	vsp = vsp + grv;		
 }

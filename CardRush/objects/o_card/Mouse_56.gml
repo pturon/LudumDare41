@@ -44,7 +44,9 @@ if (picked && mouse_y < 627) {
 		case "healing":
 			if(global.mana >= 3){
 				global.mana = global.mana - 3;
-				health++;
+				if(health < global.max_hp){
+					health++;					
+				}
 				played = true;
 			}
 			break;
