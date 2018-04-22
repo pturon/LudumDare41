@@ -5,4 +5,5 @@ if(!invincible){
 	alarm[0] = room_speed * 2;
 	alarm[1] = room_speed;
 	invincible = true;
+	alarm[2] = 1;
 }

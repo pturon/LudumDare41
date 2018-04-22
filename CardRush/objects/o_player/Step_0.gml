@@ -25,6 +25,7 @@ if(place_meeting(x,y+vsp,o_spikes)){
 		health--;
 		alarm[1]=room_speed;
 		invincible = true;
+		alarm[2] = 1;
 	}	
 }
 

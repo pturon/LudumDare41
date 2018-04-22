@@ -1,3 +1,3 @@
-/// @description Hier Beschreibung einfügen
+/// @description Reset Invincible
 // Sie können Ihren Code in diesem Editor schreiben
-invincible=false;
+invincible = false;
