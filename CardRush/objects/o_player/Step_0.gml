@@ -1,4 +1,4 @@
-          //Input
+//Input
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
@@ -56,8 +56,12 @@ x = x + hsp;
 //Animation
 if(hsp < 0){
 	image_xscale = -1;
-} else {
+	last_direction = -1;
+} else if(hsp > 0){
 	image_xscale = 1;
+	last_direction = 1;
+} else {
+	image_xscale = last_direction;
 }
 if(!place_meeting(x,y+1,o_wall)){
 	sprite_index = s_player_a;

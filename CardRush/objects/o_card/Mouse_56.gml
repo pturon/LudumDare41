@@ -33,10 +33,25 @@ if (picked && mouse_y < 627) {
 				played = true;
 			}		
 			break;
+		case "shield":
+			if(global.mana >= 2){
+				global.mana = global.mana - 2;
+				o_player.has_shield = true;
+				o_player.alarm[4]=room_speed * 5;
+				played = true;
+			}
+			break;
+		case "healing":
+			if(global.mana >= 3){
+				global.mana = global.mana - 3;
+				health++;
+				played = true;
+			}
+			break;
 		default:
 			health--;
 			played = true;
-			//I know, that is mean
+			//I know, that is mean, but shouldn't occure :P
 	}
 	
 	if(played){

@@ -33,14 +33,14 @@ if(hsp < 0){
 	image_xscale = 1;
 }
 if(!place_meeting(x,y+1,o_wall)){
-	sprite_index = s_enemy;
+	sprite_index = s_opponent_a;
 	image_speed = 0;
 } else{
 	image_speed = 1;
 	if(hsp == 0){
-		sprite_index = s_enemy;
+		sprite_index = s_opponent_s;
 	} else {
-		sprite_index = s_enemy;	
+		sprite_index = s_opponent_r;	
 	}
 }
 

@@ -48,3 +48,7 @@ if (o_player.has_jump_buff) {
 	draw_sprite(s_jump_buff,1,x_offset_buffs,y_offset_buffs + buff_count*global.tile_size);
 	buff_count++ ;
 }
+if (o_player.has_shield) {
+	draw_sprite(s_shield_buff,1,x_offset_buffs,y_offset_buffs + buff_count*global.tile_size);
+	buff_count++ ;
+}

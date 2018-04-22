@@ -3,7 +3,7 @@ hsp = 0;
 vsp = 0; 
 grv = 0.5;
 
-enemy_health = 3;
+global.enemy_health = 3;
 
 walksp_buffed = 10;
 walksp_normal = 6;

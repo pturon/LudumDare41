@@ -21,6 +21,12 @@ switch(card_type){
 	case "manaflow":
 		sprite = s_card_manaflow;
 		break;
+	case "healing":
+		sprite = s_card_healing;
+		break;
+	case "shield":
+		sprite = s_card_shield;
+		break;
 	default:
 		sprite = s_card_back;
 		break;

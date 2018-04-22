@@ -2,7 +2,7 @@
     "id": "2c539ee5-063e-4828-9d15-b05345118d0c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_enemy",
+    "name": "o_opponent",
     "eventList": [
         {
             "id": "57e15165-3350-4b9b-bbe9-5b47adb821e9",
@@ -25,7 +25,7 @@
             "m_owner": "2c539ee5-063e-4828-9d15-b05345118d0c"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "ee4ec4fe-e911-496c-9f82-34f8e5de2232",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "06480a10-c938-4ce0-8b0e-9861908150f0",
+    "spriteId": "089ada8e-fcc6-487b-a9b2-1644b185fc8b",
     "visible": true
 }
