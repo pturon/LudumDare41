@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "59ea9223-7226-49b1-8bb3-b63eb7720729",
+            "Value": {
+                "id": "f764cda3-9534-4a5b-9f9f-1d3b54826eb3",
+                "resourcePath": "tilesets\\t_stone\\t_stone.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "5daabcc8-57e2-4358-98f5-0190888c85ca",
             "Value": {
                 "id": "b9e37363-7f10-4a36-a188-0a71fb984823",
@@ -236,6 +244,14 @@
                 "id": "510cdbbb-2dee-4799-9bb7-3c25b2ad0380",
                 "resourcePath": "views\\785664bf-e336-45d0-92c4-f1466f399a2e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d94c267-cbf9-444a-a9f3-493dba2429f2",
+            "Value": {
+                "id": "922f203a-99c1-4857-ac4e-65b11683111b",
+                "resourcePath": "sprites\\s_stone\\s_stone.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -338,7 +354,7 @@
             "Key": "b33e5066-7229-4ecd-b83c-c314c31e3f4e",
             "Value": {
                 "id": "14fe2a97-d886-49d1-b922-893b1879672f",
-                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourcePath": "tilesets\\t_overworld\\t_overworld.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -356,14 +372,6 @@
                 "id": "9118dfd8-9c9a-4428-932e-27614dcc4431",
                 "resourcePath": "views\\b7a17ed2-38fc-4d11-944c-ffcbc6a1f7c1.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "bd6b375f-aa87-402e-a178-53e8dc9f9645",
-            "Value": {
-                "id": "10a5b879-6631-4dfa-944a-e7b945c25ba6",
-                "resourcePath": "sprites\\s_block\\s_block.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -443,6 +451,14 @@
             "Value": {
                 "id": "026803ef-392d-411c-b9b3-af288eaa021b",
                 "resourcePath": "sprites\\s_overworld\\s_overworld.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e577276a-b169-44e3-af21-4361aa7ad2da",
+            "Value": {
+                "id": "cd9e9a3f-2eac-4f27-963a-af6475fa9946",
+                "resourcePath": "sprites\\s_block\\s_block.yy",
                 "resourceType": "GMSprite"
             }
         },

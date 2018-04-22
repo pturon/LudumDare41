@@ -2,7 +2,7 @@
     "id": "b33e5066-7229-4ecd-b83c-c314c31e3f4e",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tileset0",
+    "name": "t_overworld",
     "auto_tile_sets": [
         {
             "id": "f0181767-c997-4166-be90-200bd4792c96",
