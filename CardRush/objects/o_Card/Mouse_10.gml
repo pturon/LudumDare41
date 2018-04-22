@@ -1,2 +1,4 @@
-show = true;
-depth = -10000;
+if (global.card == noone){
+	show = true;
+	depth = -10000;
+}
