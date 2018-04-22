@@ -1,11 +1,11 @@
 {
-    "id": "c1bb0b93-5b61-4071-b40d-a35840077df7",
+    "id": "b33e5066-7229-4ecd-b83c-c314c31e3f4e",
     "modelName": "GMTileSet",
     "mvc": "1.11",
     "name": "tileset0",
     "auto_tile_sets": [
         {
-            "id": "14b61afa-640f-4897-8ed1-28301f861552",
+            "id": "f0181767-c997-4166-be90-200bd4792c96",
             "modelName": "GMAutoTileSet",
             "mvc": "1.0",
             "closed_edge": false,
