@@ -1,5 +1,12 @@
-x = camera_get_view_x(view_camera) +posX;
+x = camera_get_view_x(view_camera) + posX;
 y = camera_get_view_y(view_camera) +posY;
+
+
+if (picked) {
+	x = x + display_mouse_get_x() - mouse_pressed_x;
+	y = y + display_mouse_get_y() - mouse_pressed_y;
+}
+
 
 switch(card_type){
 	case "speed_up":
