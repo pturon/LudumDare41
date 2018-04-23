@@ -4,7 +4,9 @@ posY = y;
 
 hsp = 0; 
 vsp = 0; 
-grv = 1;
+grv_normal = 1;
+grv_increased = 2;
+grv = grv_normal;
 
 global.enemy_health = 3;
 

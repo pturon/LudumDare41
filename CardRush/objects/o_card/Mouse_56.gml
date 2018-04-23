@@ -76,8 +76,8 @@ if (picked && mouse_y < 627) {
 		case "gravity_field":
 			if(global.mana >= 2){
 				global.mana = global.mana - 2;
-				o_opponent.jumpspeed = o_opponent.jumpspeed_debuffed;
-				o_opponent.alarm[3] = room_speed * 4;
+				o_opponent.grv = o_opponent.grv_increased;
+				o_opponent.alarm[6] = room_speed * 4;
 				played = true;
 			}
 			break;
