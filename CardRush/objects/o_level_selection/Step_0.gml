@@ -1,4 +1,4 @@
-menu_x += (menu_x_target - menu_x) / menu_speed;
+ menu_x += (menu_x_target - menu_x) / menu_speed;
 
 if(menu_control){
 	if(keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))){
@@ -19,7 +19,11 @@ if(menu_control){
 			global.current_level = r_level1;
 				room_goto(r_level1);
 				break;
-			case 2:
+			case 2: 
+				global.current_level = r_level2;
+				room_goto(r_level2);
+				break;
+			case 3:
 				room_goto(r_main_menu);
 				break;
 		}

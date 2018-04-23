@@ -13,7 +13,8 @@ menu_control = true;
 
 menu[0] = "Tutorial";
 menu[1] = "Level 1";
-menu[2] = "Back to main menu";
+menu[2] = "Level 2";
+menu[3] = "Back to main menu";
 
 menu_items = array_length_1d(menu);
 menu_cursor = 0;
