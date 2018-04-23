@@ -11,4 +11,8 @@ if(!invincible && !has_shield && !knockback){
 	knockbacksp = 3 * sign(hsp) * -1;
 	jump = true;
 }
-has_shield = false;
+if(has_shield){
+	alarm[1] = room_speed;
+	invincible = true;
+	has_shield = false;
+}

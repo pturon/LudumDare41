@@ -24,7 +24,10 @@ if(!knockback){
 }
 
 //Movement
-if(!knockback){
+if(freezed){
+	hsp = 0;
+	vsp = vsp + grv;
+} else if(!knockback){
 	var move = key_right - key_left;
 	hsp = move * walksp;
 	vsp = vsp + grv;
