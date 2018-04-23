@@ -9,11 +9,20 @@ if (picked) {
 
 
 switch(card_type){
-	case "speed_up":
-		sprite = s_card_speed_up;
+	case "cleanse":
+		sprite = s_card_cleanse;
+		break;
+	case "fireball":
+		sprite = s_card_fireball;
 		break;
 	case "freeze":
 		sprite = s_card_freeze;
+		break;
+	case "gravity_field":
+		sprite = s_card_gravity_field;
+		break;
+	case "healing":
+		sprite = s_card_healing;
 		break;
 	case "jumping_power":
 		sprite = s_card_jumping_power;
@@ -21,11 +30,14 @@ switch(card_type){
 	case "manaflow":
 		sprite = s_card_manaflow;
 		break;
-	case "healing":
-		sprite = s_card_healing;
-		break;
 	case "shield":
 		sprite = s_card_shield;
+		break;
+	case "slow":
+		sprite = s_card_slow;
+		break;
+	case "speed_up":
+		sprite = s_card_speed_up;
 		break;
 	default:
 		sprite = s_card_back;

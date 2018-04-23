@@ -55,7 +55,7 @@ if (picked && mouse_y < 627) {
 			if(global.mana >= 2){
 				global.mana = global.mana - 2;
 				o_opponent.walksp = o_opponent.walksp_slowed;
-				o_opponent.alarm[0] = room_speed * 2;
+				o_opponent.alarm[0] = room_speed * 3;
 				played = true;
 			}
 			break;
@@ -73,7 +73,7 @@ if (picked && mouse_y < 627) {
 				played = true;
 			}
 			break;
-		case "jump_debuff":
+		case "gravity_field":
 			if(global.mana >= 2){
 				global.mana = global.mana - 2;
 				o_opponent.jumpspeed = o_opponent.jumpspeed_debuffed;
@@ -82,8 +82,8 @@ if (picked && mouse_y < 627) {
 			}
 			break;
 		case "cleanse":
-			if(global.mana >= 2){
-				global.mana = global.mana - 2;
+			if(global.mana >= 3){
+				global.mana = global.mana - 3;
 				o_player.knockback = false;
 				o_player.jump = false;
 				if(!o_player.has_speed_buff){
@@ -108,7 +108,9 @@ if (picked && mouse_y < 627) {
 		ds_list_delete(global.pile, 0);
 			
 		if(ds_list_empty(global.pile)){
-			ds_list_shuffle(global.pile_used);
+			for(i = 0; i <= irandom(10);i++){
+				ds_list_shuffle(global.pile_used);
+			}
 			for(i=0; i<ds_list_size(global.pile_used); i++){
 				ds_list_add(global.pile,ds_list_find_value(global.pile_used,i));
 			}
