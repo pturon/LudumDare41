@@ -4,21 +4,35 @@ key_right = false;
 key_space = false;
 key_down = false;
 
-if(!knockback){	
-	//is running right possible?
-	if(!place_meeting(x+walksp,y,o_wall) && place_meeting(x+walksp,y+global.tile_size,o_wall)){
+if(!knockback && !freezed){	
+	nearest_enemy = instance_nearest(x,y,o_enemy_easy);
+	nearest_projectile_l = instance_nearest(x,y,o_bullet_l);
+	nearest_projectile_r = instance_nearest(x,y,o_bullet_r);
+	nearest_canon_l = instance_nearest(x,y,o_canon_l);
+	nearest_canon_r = instance_nearest(x,y,o_canon_r);
+	//is simple running right possible?
+	if(nearest_canon_l.x-x<global.tile_size*4 && y-nearest_canon_l.y<global.tile_size){
+		
+	}
+	show_debug_message(nearest_canon_l.x-x);
+	show_debug_message(y-nearest_canon_l.y);
+	if(!place_meeting(x+walksp,y,o_wall) && (place_meeting(x+walksp,y+global.tile_size,o_wall) || place_meeting(x+walksp,y+global.tile_size*2.5,o_wall))){
 		key_right = true;
-		if(place_meeting(x+global.tile_size,y,o_enemy_easy) || place_meeting(x+global.tile_size*2,y,o_canon_l) || place_meeting(x+global.tile_size*2,y,o_bullet_l)){
+		show_debug_message(walksp);
+		//jump to avoid stuff on walking height
+		if(place_meeting(x+walksp*4,y,o_enemy_easy) || place_meeting(x+walksp*4,y,o_canon_l) || place_meeting(x+walksp*4,y,o_bullet_l) || place_meeting(x+walksp*8,y,o_canon_l) || place_meeting(x+walksp*8,y,o_bullet_l) || place_meeting(x+walksp*12,y,o_canon_l) || place_meeting(x+walksp*12,y,o_bullet_l)){
 			key_space = true;
 		}
 		
 	} else {
+		//standing in front of a step
 		if(place_meeting(x+walksp,y,o_wall) && !place_meeting(x+walksp,y-global.tile_size,o_wall)){
 			key_space = true;
 			key_right = true;
-		} else if(!place_meeting(x+walksp,y+global.tile_size,o_wall)){
-			key_space = true;
-			key_right = true;
+		//standing in front of a ledge
+		} else if(place_meeting(x,y+1,o_wall) && !place_meeting(x+walksp,y+global.tile_size,o_wall)){
+			//key_space = true;
+			//key_right = true;
 		}
 	}
 }
@@ -42,7 +56,7 @@ if(freezed){
 
 
 //Jumping
-if(place_meeting(x,y+1,o_wall) && (key_space)){
+if(place_meeting(x,y+1,o_wall) && (key_space) && !freezed){
 	vsp = jumpspeed;
 }
 
@@ -56,7 +70,7 @@ if(place_meeting(x,y+vsp,o_wall)){
 }
 if(place_meeting(x,y,o_spikes)){
 	if(!invincible && !knockback && !has_shield){
-		global.enemy_health--;
+		health--;
 		alarm[2] = 1;
 	}
 	alarm[1]=room_speed;
