@@ -4,6 +4,18 @@ key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
+nearest_enemy = instance_nearest(x,y,o_enemy_easy);
+nearest_bullet_l = instance_nearest(x,y,o_bullet_l);
+nearest_bullet_r = instance_nearest(x,y,o_bullet_r);
+nearest_canon_l = instance_nearest(x,y,o_canon_l);
+nearest_canon_r = instance_nearest(x,y,o_canon_r);
+
+if(nearest_bullet_l != noone){
+	show_debug_message("x: ");
+	show_debug_message(x-nearest_bullet_l.x);
+	show_debug_message("y: ");
+	show_debug_message(y-nearest_bullet_l.y);
+}
 //Movement
 if(!knockback){
 	var move = key_right - key_left;

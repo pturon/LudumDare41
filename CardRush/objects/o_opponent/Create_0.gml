@@ -4,9 +4,7 @@ posY = y;
 
 hsp = 0; 
 vsp = 0; 
-grv_normal = 1;
-grv_increased = 2;
-grv = grv_normal;
+grv = 1;
 
 global.enemy_health = 3;
 
@@ -25,6 +23,9 @@ has_jump_buff = false;
 has_shield = false;
 invincible = false;
 freezed = false;
+
+//ki stuff
+wait_for_bullet = false;
 
 image_speed = 0;
 

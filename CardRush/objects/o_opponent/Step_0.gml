@@ -5,18 +5,32 @@ key_space = false;
 key_down = false;
 
 if(!knockback && !freezed){	
+	//get possible dangers
 	nearest_enemy = instance_nearest(x,y,o_enemy_easy);
-	nearest_projectile_l = instance_nearest(x,y,o_bullet_l);
-	nearest_projectile_r = instance_nearest(x,y,o_bullet_r);
+	nearest_bullet_l = instance_nearest(x,y,o_bullet_l);
+	nearest_bullet_r = instance_nearest(x,y,o_bullet_r);
 	nearest_canon_l = instance_nearest(x,y,o_canon_l);
 	nearest_canon_r = instance_nearest(x,y,o_canon_r);
-	//is simple running right possible?
-	if(nearest_canon_l.x-x<global.tile_size*4 && y-nearest_canon_l.y<global.tile_size){
-		
-	}
+	
+	//is he waiting for a bypassing bullet?
+	show_debug_message("x: ");
 	show_debug_message(nearest_canon_l.x-x);
+	show_debug_message("y: ");
 	show_debug_message(y-nearest_canon_l.y);
-	if(!place_meeting(x+walksp,y,o_wall) && (place_meeting(x+walksp,y+global.tile_size,o_wall) || place_meeting(x+walksp,y+global.tile_size*2.5,o_wall))){
+	if(wait_for_bullet){
+		if(nearest_bullet_l != noone && x-nearest_bullet_l.x<global.tile_size*1.5 && y-nearest_bullet_l.y<global.tile_size*2 && y-nearest_bullet_l.y>global.tile_size){
+			key_right=true;
+			key_space=true;
+			wait_for_bullet = false;
+		} else {
+			key_down = true;		
+		}
+	//should he though?
+	} else if(nearest_canon_l != noone && place_meeting(x,y+1,o_wall) && nearest_canon_l.x-x<global.tile_size*5 && nearest_canon_l.x-x>global.tile_size && y-nearest_canon_l.y<global.tile_size*2 && y-nearest_canon_l.y>global.tile_size){
+		key_down = true;	
+		wait_for_bullet = true;
+	//is simple running right possible?	
+	} else if(!place_meeting(x+walksp,y,o_wall) && (place_meeting(x+walksp,y+global.tile_size,o_wall) || place_meeting(x+walksp,y+global.tile_size*2.5,o_wall))){
 		key_right = true;
 		show_debug_message(walksp);
 		//jump to avoid stuff on walking height
@@ -110,7 +124,11 @@ if(!place_meeting(x,y+1,o_wall)){
 } else{
 	image_speed = 1;
 	if(hsp == 0){
-		sprite_index = s_opponent_s;
+		if(key_down){
+			sprite_index = s_opponent_c;
+		} else {
+			sprite_index = s_opponent_s;
+		}		
 	} else {
 		sprite_index = s_opponent_r;	
 	}
