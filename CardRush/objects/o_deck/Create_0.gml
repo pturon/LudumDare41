@@ -1,4 +1,5 @@
 /// @description Hier Beschreibung einfügen
+hand=ds_list_create();
 global.pile = ds_list_create();
 global.pile_used = ds_list_create();
 ds_list_add(global.pile,"cleanse");
