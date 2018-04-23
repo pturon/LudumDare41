@@ -82,6 +82,14 @@ if(!place_meeting(x,y+1,o_wall)){
 	}
 }
 
-if(health == 0){
- game_end();	
+//Respawn
+if(global.enemy_health == 0){
+	invincible = false;	
+	knockback = false;
+	jump = false;
+	x = posX;
+	y = posY;
+	hsp = 0;
+	vsp = 0;
+	global.enemy_health  = 3;
 }

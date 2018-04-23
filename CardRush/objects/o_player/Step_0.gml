@@ -30,13 +30,14 @@ if(place_meeting(x,y+vsp,o_wall)){
 	vsp = 0;
 	knockback = false;
 }
-if(place_meeting(x,y+vsp,o_spikes)){
-	if(!invincible){
+if(place_meeting(x,y,o_spikes)){
+	if(!invincible && !knockback && !has_shield){
 		health--;
-		alarm[1]=room_speed;
-		invincible = true;
 		alarm[2] = 1;
-	}	
+	}
+	alarm[1]=room_speed;
+	invincible = true;
+	has_shield = false;
 }
 
 y = y + vsp;
@@ -80,8 +81,8 @@ if(!place_meeting(x,y+1,o_wall)){
 }
 
 if(health == 0){
- room_goto(r_death_menu);
- instance_destroy(o_deck);
+	room_goto(r_death_menu);
+	instance_destroy(o_deck);
 }
 
 

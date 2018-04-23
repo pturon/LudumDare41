@@ -1,2 +1,2 @@
-/// @description Hier Beschreibung einfügen
-// Sie können Ihren Code in diesem Editor schreiben
+/// @description Reset shield
+has_shield = false;

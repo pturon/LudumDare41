@@ -1,6 +1,5 @@
-other.image_speed = 4;
-if(!invincible && !has_shield){
-	health  = health - 1;
+if(!invincible && !has_shield && other.image_speed==0 && !knockback){
+	global.enemy_health   = global.enemy_health  - 1;
 	walksp = walksp_slowed;
 	has_speed_buff = false;
 	alarm[0] = room_speed * 2;
@@ -11,4 +10,5 @@ if(!invincible && !has_shield){
 	knockbacksp = -3;
 	jump = true;
 }
+other.image_speed = 4;
 has_shield = false;
