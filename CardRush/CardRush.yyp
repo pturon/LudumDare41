@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1bb3adae-e638-42c7-bfe0-8d8ce83153a4",
+            "Value": {
+                "id": "362be643-bd27-4eb8-bb40-a3a4cbf7a278",
+                "resourcePath": "sprites\\s_overworld_stone\\s_overworld_stone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "219d6ddd-7b7a-4453-8c4a-bb3b9e9e8970",
             "Value": {
                 "id": "376d8c36-d2aa-4024-ad70-905e8da57904",
@@ -447,11 +455,27 @@
             }
         },
         {
+            "Key": "a0342b50-82af-49ff-90d4-ad219750a4e1",
+            "Value": {
+                "id": "b69c2365-4556-4dbf-9dcd-01c358a5ca5b",
+                "resourcePath": "sprites\\s_reroll\\s_reroll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a057308f-a88f-40db-a8c4-274cced8d901",
             "Value": {
                 "id": "e60363d8-32bf-460c-8219-2b01fc30d71a",
                 "resourcePath": "objects\\o_bullet_r\\o_bullet_r.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a15b21e8-c5f2-47b8-af1e-ec91fe5115b5",
+            "Value": {
+                "id": "ebd1839c-618c-4dde-b16c-9c75033860ee",
+                "resourcePath": "rooms\\r_level\\r_level.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -572,6 +596,14 @@
                 "id": "1f4e322d-fe1d-4307-8bd1-6f46521d4cd6",
                 "resourcePath": "views\\c9f056e7-f0d8-49da-9cdf-3c673d882266.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ca363d9b-4ef3-485b-807d-3cf0f0c724e8",
+            "Value": {
+                "id": "b2bd6a20-753b-44e6-acb1-f597eaa4607a",
+                "resourcePath": "tilesets\\t_overworld_stone\\t_overworld_stone.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
