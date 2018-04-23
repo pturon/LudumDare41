@@ -15,12 +15,14 @@ walksp = walksp_normal;
 
 jumpspeed_normal = -12;
 jumpspeed_buffed = -14;
+jumpspeed_debuffed = -8;
 jumpspeed = jumpspeed_normal;
 
 has_speed_buff = false;
 has_jump_buff = false;
 has_shield = false;
 invincible = false;
+freezed = false;
 
 image_speed = 0;
 

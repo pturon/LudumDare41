@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "3f644abb-e1c2-4ef1-8692-817ba3d82961",
+            "Value": {
+                "id": "be31802b-e98f-443a-a8e9-e3870d9eea3f",
+                "resourcePath": "sprites\\s_card_slow\\s_card_slow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ff993df-aa72-4f90-87d0-ffcf21bb3a9b",
             "Value": {
                 "id": "ce84877e-b002-41bc-96bf-3b06ef2dde08",
@@ -327,6 +335,22 @@
             }
         },
         {
+            "Key": "7406f332-89b9-4a71-8382-5c07161b1a43",
+            "Value": {
+                "id": "fa132ef4-96a5-40ca-916c-dd3125aabdde",
+                "resourcePath": "objects\\o_projectile\\o_projectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "74dc2f1e-298b-42a7-a99f-6b0aaed4eda8",
+            "Value": {
+                "id": "97086a90-efc0-44bd-a77f-1f09f132553a",
+                "resourcePath": "sprites\\s_card_gravity_field\\s_card_gravity_field.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "753ecc3e-6dec-49dc-b31d-345f7fb8749f",
             "Value": {
                 "id": "2f3c0cf5-b55f-4384-983f-0ae846585e80",
@@ -355,6 +379,14 @@
             "Value": {
                 "id": "1449b454-baae-4860-a093-4c37682f50c3",
                 "resourcePath": "sprites\\s_pile_used\\s_pile_used.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "84006223-0c92-4db6-ad17-f3801c062a6a",
+            "Value": {
+                "id": "93ba4d0d-8ddf-40e6-b273-4a54e3065f6a",
+                "resourcePath": "sprites\\s_card_fireball\\s_card_fireball.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -548,6 +580,14 @@
                 "id": "5e78060f-6770-45c4-b02c-f09969c6d30b",
                 "resourcePath": "objects\\o_block\\o_block.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cbe237bf-c5dc-42d7-901b-1727363f33ef",
+            "Value": {
+                "id": "c393172e-67ae-4e8b-a374-281fed51bfff",
+                "resourcePath": "sprites\\s_card_cleanse\\s_card_cleanse.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

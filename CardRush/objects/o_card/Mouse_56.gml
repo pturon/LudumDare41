@@ -14,7 +14,8 @@ if (picked && mouse_y < 627) {
 		case "freeze":
 			if(global.mana >= 3){
 				global.mana = global.mana - 3;
-				//TODO freeze the enemy;
+				o_opponent.freezed = true;
+				o_opponent.alarm[5] = room_speed * 2;
 				played = true;
 			}
 			break;
@@ -50,6 +51,51 @@ if (picked && mouse_y < 627) {
 				played = true;
 			}
 			break;
+		case "slow":
+			if(global.mana >= 2){
+				global.mana = global.mana - 2;
+				o_opponent.walksp = o_opponent.walksp_slowed;
+				o_opponent.alarm[0] = room_speed * 3;
+				played = true;
+			}
+			break;
+		case "fireball":
+			if(global.mana >= 2){
+				global.mana = global.mana - 2;
+				if(o_player.last_direction<0){
+					fireball = instance_create_depth(o_player.x-32,o_player.y-32,1,o_bullet_l);
+					fireball.hsp = -20;
+				} else {
+					fireball = instance_create_depth(o_player.x+32,o_player.y-40,1,o_bullet_r);
+					fireball.hsp = 20;
+				}
+				fireball.owner=o_player;
+				played = true;
+			}
+			break;
+		case "gravity_field":
+			if(global.mana >= 2){
+				global.mana = global.mana - 2;
+				o_opponent.jumpspeed = o_opponent.jumpspeed_debuffed;
+				o_opponent.alarm[3] = room_speed * 4;
+				played = true;
+			}
+			break;
+		case "cleanse":
+			if(global.mana >= 3){
+				global.mana = global.mana - 3;
+				o_player.knockback = false;
+				o_player.jump = false;
+				if(!o_player.has_speed_buff){
+					o_player.walksp = o_player.walksp_normal;
+				}
+				if(!o_player.has_jump_buff){
+					o_player.jumpspeed = o_player.jumpspeed_normal;
+				}
+				played = true;
+			}
+			break;
+		default:
 		default:
 			health--;
 			played = true;
@@ -62,7 +108,9 @@ if (picked && mouse_y < 627) {
 		ds_list_delete(global.pile, 0);
 			
 		if(ds_list_empty(global.pile)){
-			ds_list_shuffle(global.pile_used);
+			for(i = 0; i <= irandom(10);i++){
+				ds_list_shuffle(global.pile_used);
+			}
 			for(i=0; i<ds_list_size(global.pile_used); i++){
 				ds_list_add(global.pile,ds_list_find_value(global.pile_used,i));
 			}

@@ -8,6 +8,9 @@ if(!knockback){
 	//is running right possible?
 	if(!place_meeting(x+walksp,y,o_wall) && place_meeting(x+walksp,y+global.tile_size,o_wall)){
 		key_right = true;
+		if(place_meeting(x+global.tile_size,y,o_enemy_easy) || place_meeting(x+global.tile_size*2,y,o_canon_l) || place_meeting(x+global.tile_size*2,y,o_bullet_l)){
+			key_space = true;
+		}
 		
 	} else {
 		if(place_meeting(x+walksp,y,o_wall) && !place_meeting(x+walksp,y-global.tile_size,o_wall)){
@@ -21,14 +24,18 @@ if(!knockback){
 }
 
 //Movement
-if(!knockback){
+if(freezed){
+	hsp = 0;
+	vsp = vsp + grv;
+} else if(!knockback){
 	var move = key_right - key_left;
 	hsp = move * walksp;
 	vsp = vsp + grv;
-} else if(jump){
-	vsp = jumpspeed;
-	jump = false;
-} else {	
+} else {
+	if(jump){
+		vsp = jumpspeed;
+		jump = false;
+	}
 	hsp = knockbacksp;                
 	vsp = vsp + grv;		
 }
@@ -84,6 +91,7 @@ if(!place_meeting(x,y+1,o_wall)){
 
 //Respawn
 if(global.enemy_health == 0){
+	walksp = walksp_normal;
 	invincible = false;	
 	knockback = false;
 	jump = false;
