@@ -1,5 +1,5 @@
 if(!invincible && !has_shield && other.image_speed==0 && !knockback){
-	health  = health - 1;
+	health--;
 	walksp = walksp_slowed;
 	has_speed_buff = false;
 	alarm[0] = room_speed * 2;

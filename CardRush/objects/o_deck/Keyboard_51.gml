@@ -96,8 +96,6 @@ switch(card.card_type){
 		}
 		break;
 	default:
-	default:
-		health--;
 		played = true;
 		//I know, that is mean, but shouldn't occure :P
 }

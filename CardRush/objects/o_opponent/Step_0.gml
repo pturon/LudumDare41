@@ -56,7 +56,7 @@ if(place_meeting(x,y+vsp,o_wall)){
 }
 if(place_meeting(x,y,o_spikes)){
 	if(!invincible && !knockback && !has_shield){
-		health--;
+		global.enemy_health--;
 		alarm[2] = 1;
 	}
 	alarm[1]=room_speed;

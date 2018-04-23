@@ -96,8 +96,6 @@ if (picked && mouse_y < 627) {
 			}
 			break;
 		default:
-		default:
-			health--;
 			played = true;
 			//I know, that is mean, but shouldn't occure :P
 	}
