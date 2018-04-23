@@ -50,6 +50,10 @@ if(place_meeting(x+hsp,y,o_wall)){
 	hsp = 0;
 	knockback = false;
 }
+/*if(x+hsp-sprite_width/2 <32){
+	hsp = 0;
+	knockback = false;
+}*/
 
 x = x + hsp;
 
