@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1cd2d0dc-e50a-48af-97e0-3b74e50497ac",
+            "Value": {
+                "id": "c9a13c32-0495-45b7-809a-fb1848353f71",
+                "resourcePath": "sprites\\s_background\\s_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "219d6ddd-7b7a-4453-8c4a-bb3b9e9e8970",
             "Value": {
                 "id": "376d8c36-d2aa-4024-ad70-905e8da57904",
@@ -207,6 +215,14 @@
             }
         },
         {
+            "Key": "3e871b63-414e-41a8-8db8-9203dffbcf25",
+            "Value": {
+                "id": "94b8d52b-5541-4884-8e5e-3b8b83999b48",
+                "resourcePath": "sprites\\s_trees\\s_trees.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f644abb-e1c2-4ef1-8692-817ba3d82961",
             "Value": {
                 "id": "be31802b-e98f-443a-a8e9-e3870d9eea3f",
@@ -260,6 +276,14 @@
                 "id": "78f746f9-81ca-4af5-b948-c3d790a071dd",
                 "resourcePath": "views\\509d188b-2c7b-40e2-91d2-078f663ea4dd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "519e4b35-f429-4325-bfa9-81838b82b7ca",
+            "Value": {
+                "id": "8bbe291f-ec76-42b2-860e-ce5893df6abd",
+                "resourcePath": "objects\\o_background_black\\o_background_black.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -383,6 +407,14 @@
             }
         },
         {
+            "Key": "81aba708-b089-4ae2-8538-18e0764def8b",
+            "Value": {
+                "id": "b6514388-20fc-4f1c-bc68-c72b80bc11dc",
+                "resourcePath": "objects\\o_camera\\o_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "824fc0e2-8ba4-4cfc-a7a9-fb4a99a22c00",
             "Value": {
                 "id": "1449b454-baae-4860-a093-4c37682f50c3",
@@ -435,6 +467,14 @@
             "Value": {
                 "id": "7b385aa4-6b6f-4fc3-94f8-42fecf5a13c3",
                 "resourcePath": "sprites\\s_mana_crystal_empty\\s_mana_crystal_empty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9c1e6257-2dbe-41eb-b593-1965ad488b43",
+            "Value": {
+                "id": "af665513-f293-4d5f-bbb9-ba3ee9dc4586",
+                "resourcePath": "sprites\\s_mountain\\s_mountain.yy",
                 "resourceType": "GMSprite"
             }
         },
