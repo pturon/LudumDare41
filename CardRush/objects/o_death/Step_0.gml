@@ -18,7 +18,7 @@ if(menu_control){
 				room_goto(r_main_menu);
 				break;
 			case 2: 
-				room_goto(r_level1);
+				room_goto(global.current_level);
 				break;
 		}
 	}

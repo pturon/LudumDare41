@@ -17,7 +17,8 @@ if(menu_control){
 			case 1: 
 				room_goto(r_level_selection);
 				break;
-			case 2: 
+			case 2:
+				global.current_level = room0;
 				room_goto(room0);
 				break;
 		}

@@ -1,4 +1,4 @@
-/// @description Hier Beschreibung einfügen
+///* @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 for(i = 0; i < ds_list_size(global.pile_used); i++){
 	used_card = ds_list_find_value(global.pile_used,i);

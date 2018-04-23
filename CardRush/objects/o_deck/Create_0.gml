@@ -1,24 +1,4 @@
 /// @description Hier Beschreibung einfügen
 hand=ds_list_create();
-global.pile = ds_list_create();
+global.pile = global.deck;
 global.pile_used = ds_list_create();
-ds_list_add(global.pile,"cleanse");
-ds_list_add(global.pile,"cleanse");
-ds_list_add(global.pile,"fireball");
-ds_list_add(global.pile,"fireball");
-ds_list_add(global.pile,"freeze");
-ds_list_add(global.pile,"freeze");
-ds_list_add(global.pile,"gravity_field");
-ds_list_add(global.pile,"gravity_field");
-ds_list_add(global.pile,"healing");
-ds_list_add(global.pile,"healing");
-ds_list_add(global.pile,"jumping_power");
-ds_list_add(global.pile,"jumping_power");
-ds_list_add(global.pile,"manaflow");
-ds_list_add(global.pile,"manaflow");
-ds_list_add(global.pile,"shield");
-ds_list_add(global.pile,"shield");
-ds_list_add(global.pile,"slow");
-ds_list_add(global.pile,"slow");
-ds_list_add(global.pile,"speed_up");
-ds_list_add(global.pile,"speed_up");

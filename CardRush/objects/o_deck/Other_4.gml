@@ -1,4 +1,7 @@
 /// @description Hier Beschreibung einfügen
+global.pile = global.deck;
+ds_list_clear(global.pile_used);
+ds_list_clear(hand);
 for(i = 0; i <= irandom(10);i++){
 	ds_list_shuffle(global.pile);	
 }

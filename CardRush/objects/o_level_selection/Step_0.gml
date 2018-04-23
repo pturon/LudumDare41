@@ -11,10 +11,12 @@ if(menu_control){
 	}
 	if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)){
 		switch(menu_cursor){
-			case 0: 
+			case 0:
+				global.current_level = room0;
 				room_goto(room0);
 				break;
 			case 1:
+			global.current_level = r_level1;
 				room_goto(r_level1);
 				break;
 			case 2:

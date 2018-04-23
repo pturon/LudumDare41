@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1349bccb-e212-4f72-822e-e4d8f6c7e119",
+            "Value": {
+                "id": "b6ba4050-854f-46f4-9f4d-ee94591c064e",
+                "resourcePath": "objects\\o_global_variables\\o_global_variables.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1bb3adae-e638-42c7-bfe0-8d8ce83153a4",
             "Value": {
                 "id": "362be643-bd27-4eb8-bb40-a3a4cbf7a278",
