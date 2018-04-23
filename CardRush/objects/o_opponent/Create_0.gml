@@ -8,8 +8,8 @@ grv = 1;
 
 global.enemy_health = 3;
 
-walksp_buffed = 12;
-walksp_normal = 8;
+walksp_buffed = 11;
+walksp_normal = 7;
 walksp_slowed = 4;
 walksp = walksp_normal;
 

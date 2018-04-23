@@ -40,6 +40,7 @@ switch(card_type){
 		sprite = s_card_speed_up;
 		break;
 	default:
+		show_debug_message(card_type);
 		sprite = s_card_back;
 		break;
 }

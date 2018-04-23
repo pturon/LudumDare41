@@ -1,4 +1,4 @@
- menu_x += (menu_x_target - menu_x) / menu_speed;
+  menu_x += (menu_x_target - menu_x) / menu_speed;
 
 if(menu_control){
 	if(keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))){
@@ -18,7 +18,7 @@ if(menu_control){
 				room_goto(r_main_menu);
 				break;
 			case 2: 
-				room_goto(room0);
+				room_goto(r_level1);
 				break;
 		}
 	}
