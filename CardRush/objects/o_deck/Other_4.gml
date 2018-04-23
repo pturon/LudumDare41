@@ -1,5 +1,6 @@
 /// @description Hier Beschreibung einfügen
 global.pile = global.deck;
+show_debug_message(ds_list_size(global.deck))
 ds_list_clear(global.pile_used);
 ds_list_clear(hand);
 for(i = 0; i <= irandom(10);i++){

@@ -13,6 +13,5 @@ for(i=0;i<5;i++){
 		}
 		ds_list_clear(global.pile_used);
 	}
-
 }
-
+instance_destroy();

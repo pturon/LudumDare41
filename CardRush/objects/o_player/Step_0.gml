@@ -86,7 +86,6 @@ if(!place_meeting(x,y+1,o_wall)){
 if(health == 0){
 	instance_destroy(self);
 	room_goto(r_death_menu);
-	instance_destroy(o_deck);
 }
 
 
