@@ -67,6 +67,10 @@ if(place_meeting(x+hsp,y,o_wall)){
 	hsp = 0;
 	knockback = false;
 }
+if(x+hsp<0 || x+hsp > room_width){
+	hsp = 0;
+	knockback = false;
+}
 
 x = x + hsp;
 
