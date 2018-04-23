@@ -1,8 +1,10 @@
 /// @description Hier Beschreibung einfügen
-global.pile = global.deck;
-show_debug_message(ds_list_size(global.deck))
 ds_list_clear(global.pile_used);
 ds_list_clear(hand);
+ds_list_clear(global.pile);
+for(i=0; i<ds_list_size(global.deck);i++){
+	ds_list_add(global.pile, ds_list_find_value(global.deck,i));
+}
 for(i = 0; i <= irandom(10);i++){
 	ds_list_shuffle(global.pile);	
 }
