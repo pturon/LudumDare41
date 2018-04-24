@@ -6,7 +6,7 @@ hsp = 0;
 vsp = 0; 
 grv = 1;
 
-global.enemy_health = 3;
+global.enemy_health = 10;
 
 walksp_buffed = 11;
 walksp_normal = 8;
@@ -25,7 +25,10 @@ invincible = false;
 freezed = false;
 
 //ki stuff
-wait_for_bullet = false;
+wait_for_bullet_1 = false;
+wait_for_bullet_2 = false;
+wait_for_bullet_3 = false;
+wait_for_hole = false;
 
 image_speed = 0;
 

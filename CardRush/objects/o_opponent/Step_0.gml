@@ -12,27 +12,60 @@ if(!knockback && !freezed){
 	nearest_canon_l = instance_nearest(x,y,o_canon_l);
 	nearest_canon_r = instance_nearest(x,y,o_canon_r);
 	
-	//is he waiting for a bypassing bullet?
-	show_debug_message("x: ");
-	show_debug_message(nearest_canon_l.x-x);
-	show_debug_message("y: ");
-	show_debug_message(y-nearest_canon_l.y);
-	if(wait_for_bullet){
-		if(nearest_bullet_l != noone && x-nearest_bullet_l.x<global.tile_size*1.5 && y-nearest_bullet_l.y<global.tile_size*2 && y-nearest_bullet_l.y>global.tile_size){
+	//if mid-air
+	if(wait_for_bullet_1){
+		if(nearest_bullet_l != noone && nearest_bullet_l.x-x<-global.tile_size*2 && y-nearest_bullet_l.y<global.tile_size*2 && y-nearest_bullet_l.y>global.tile_size){
 			key_right=true;
 			key_space=true;
-			wait_for_bullet = false;
-		} else {
+			wait_for_bullet_1 = false;
+		} else  if (nearest_bullet_l==noone || nearest_bullet_l.x-x<-global.tile_size*6 || nearest_bullet_l.x-x>global.tile_size*6 ){
+			key_right=true;
+			key_space=true;
+			wait_for_bullet_1 = false;
+		}else {
 			key_down = true;		
 		}
-	//should he though?
-	} else if(nearest_canon_l != noone && place_meeting(x,y+1,o_wall) && nearest_canon_l.x-x<global.tile_size*5 && nearest_canon_l.x-x>global.tile_size && y-nearest_canon_l.y<global.tile_size*2 && y-nearest_canon_l.y>global.tile_size){
+	//so get in crouching position2?
+	} else if(wait_for_bullet_2){
+		key_right=true;
+		if(nearest_bullet_l != noone && nearest_bullet_l.x-x<-global.tile_size*2 && y-nearest_bullet_l.y<global.tile_size*3 && y-nearest_bullet_l.y>global.tile_size*2){
+			key_right=true;
+			key_space=true;
+			wait_for_bullet_2 = false;
+		}
+	//so get in crouching position3?
+	} else if(wait_for_bullet_3){
+		key_right=true;
+		if(nearest_bullet_l != noone && nearest_bullet_l.x-x<-global.tile_size*2 && y-nearest_bullet_l.y<global.tile_size*4 && y-nearest_bullet_l.y>global.tile_size*3){
+			key_right=true;
+			key_space=true;
+			wait_for_bullet_3 = false;
+		} else if(nearest_bullet_l != noone && nearest_bullet_l.x-x>global.tile_size*12 && y-nearest_bullet_l.y<global.tile_size*4 && y-nearest_bullet_l.y>global.tile_size*3){
+			key_right=true;
+			key_space=true;
+			wait_for_bullet_3 = false;
+		}
+	//step before crouching3?
+	} else if(nearest_bullet_l != noone && place_meeting(x,y+1,o_wall) && nearest_bullet_l.x-x<global.tile_size*12 && nearest_bullet_l.x-x>global.tile_size*3 && y-nearest_bullet_l.y<global.tile_size*4 && y-nearest_bullet_l.y>global.tile_size*3){
+		wait_for_bullet_3 = true;
+	//step before crouching2?
+	} else if(nearest_canon_l != noone && place_meeting(x,y+1,o_wall) && nearest_canon_l.x-x<global.tile_size*8 && nearest_canon_l.x-x>global.tile_size*2 && y-nearest_canon_l.y<global.tile_size*3 && y-nearest_canon_l.y>global.tile_size*2){
+		wait_for_bullet_2 = true;
+	//should he though, because of a canon?
+	} else if(nearest_canon_l != noone && place_meeting(x,y+1,o_wall) && nearest_canon_l.x-x<global.tile_size*8 && nearest_canon_l.x-x>global.tile_size && y-nearest_canon_l.y<global.tile_size*2 && y-nearest_canon_l.y>global.tile_size){
 		key_down = true;	
-		wait_for_bullet = true;
+		wait_for_bullet_1 = true;
+	//or an already flying bullet?
+	}else if(nearest_bullet_l != noone && place_meeting(x,y+1,o_wall) && nearest_bullet_l.x-x<global.tile_size*8 && nearest_bullet_l.x-x>0 && y-nearest_bullet_l.y<global.tile_size*2 && y-nearest_canon_l.y>global.tile_size){
+		key_down = true;	
+		wait_for_bullet_1 = true;
+	//is a bullet aproaching, while he is mid-air?
+	} else if(nearest_bullet_l != noone && !place_meeting(x,y+1,o_wall) && nearest_bullet_l.x-x>0 && nearest_bullet_l.x-x<global.tile_size*7 && y-nearest_bullet_l.y<global.tile_size*2.5 && y-nearest_canon_l.y>0){
+		show_debug_message(nearest_bullet_l.x-x);
+		show_debug_message(y-nearest_bullet_l.y);
 	//is simple running right possible?	
-	} else if(!place_meeting(x+walksp,y,o_wall) && (place_meeting(x+walksp,y+global.tile_size,o_wall) || place_meeting(x+walksp,y+global.tile_size*2.5,o_wall))){
+	} else if(!place_meeting(x+walksp,y,o_wall) && place_meeting(x+walksp,y+1,o_wall)){
 		key_right = true;
-		show_debug_message(walksp);
 		//jump to avoid stuff on walking height
 		if(place_meeting(x+walksp*4,y,o_enemy_easy) || place_meeting(x+walksp*4,y,o_canon_l) || place_meeting(x+walksp*4,y,o_bullet_l) || place_meeting(x+walksp*8,y,o_canon_l) || place_meeting(x+walksp*8,y,o_bullet_l) || place_meeting(x+walksp*12,y,o_canon_l) || place_meeting(x+walksp*12,y,o_bullet_l)){
 			key_space = true;
@@ -40,13 +73,16 @@ if(!knockback && !freezed){
 		
 	} else {
 		//standing in front of a step
-		if(place_meeting(x+walksp,y,o_wall) && !place_meeting(x+walksp,y-global.tile_size,o_wall)){
+		if(place_meeting(x+walksp,y,o_wall) && (!place_meeting(x+walksp,y-global.tile_size,o_wall) || !place_meeting(x+walksp,y-global.tile_size*2,o_wall))){
 			key_space = true;
 			key_right = true;
 		//standing in front of a ledge
 		} else if(place_meeting(x,y+1,o_wall) && !place_meeting(x+walksp,y+global.tile_size,o_wall)){
-			//key_space = true;
-			//key_right = true;
+			key_space = true;
+			key_right = true;
+		} else {
+			show_debug_message("If you don't know what to do, run!");
+			key_right = true;	
 		}
 	}
 }
@@ -84,7 +120,7 @@ if(place_meeting(x,y+vsp,o_wall)){
 }
 if(place_meeting(x,y,o_spikes)){
 	if(!invincible && !knockback && !has_shield){
-		health--;
+		global.enemy_health--;
 		alarm[2] = 1;
 	}
 	alarm[1]=room_speed;

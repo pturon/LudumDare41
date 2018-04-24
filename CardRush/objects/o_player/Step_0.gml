@@ -12,7 +12,7 @@ nearest_canon_r = instance_nearest(x,y,o_canon_r);
 
 if(nearest_bullet_l != noone){
 	show_debug_message("x: ");
-	show_debug_message(x-nearest_bullet_l.x);
+	show_debug_message(nearest_bullet_l.x-x>0);
 	show_debug_message("y: ");
 	show_debug_message(y-nearest_bullet_l.y);
 }
