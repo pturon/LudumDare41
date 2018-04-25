@@ -7,4 +7,4 @@
 	other.y = other.posY;
 	other.hsp = 0;
 	other.vsp = 0;
-	global.enemy_health  = 3;
+	global.enemy_health  = 10;

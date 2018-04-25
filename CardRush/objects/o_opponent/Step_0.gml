@@ -173,6 +173,7 @@ if(!place_meeting(x,y+1,o_wall)){
 //Respawn
 if(global.enemy_health == 0){
 	walksp = walksp_normal;
+	grv = grv_normal;
 	invincible = false;	
 	knockback = false;
 	jump = false;
@@ -180,5 +181,5 @@ if(global.enemy_health == 0){
 	y = posY;
 	hsp = 0;
 	vsp = 0;
-	global.enemy_health  = 3;
+	global.enemy_health  = 10;
 }
